@@ -1,0 +1,41 @@
+
+
+# MySQL credentials
+mysql_username: root
+mysql_password: h4l0h4l0
+host: localhost
+
+# A list of Health facilities
+facilities:
+     - Alto
+     - Junho
+     - Maio
+     - Albazine
+     - Bagamoio
+     - Catembe
+     - Chamanculo
+     - Chiango
+     - Cimento
+     - Hulene
+     - Incassane
+     - Inguane
+     - Inhaca
+     - Inhagoia
+     - Macamo
+     - Mini
+     - Tendas
+     - Malhangalene
+     - Mavalane
+     - Maxaquene
+     - Muchina
+     - Mutsecua
+     - Pescadores
+     - Canico
+     - Porto
+     - Romao
+     - Tribunal
+     - Xipamanine
+     - Zimpeto
+     - Mavalane
+     - Infulene
+     - Malhagalene # wrong filename in backup script

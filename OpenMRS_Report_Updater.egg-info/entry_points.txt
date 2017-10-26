@@ -1,0 +1,3 @@
+[console_scripts]
+ReportUpdaterPy = ReportUpdaterPy.__main__:main
+
