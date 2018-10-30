@@ -1,0 +1,27 @@
+
+    app.setTextArea("output", "Actualizando  relatorios..." + "\n", end=True, callFunction=True)
+    app.setTextArea("output", sql_query + '\n', end=False, callFunction=True)
+
+    try:
+
+        # return_code = subprocess.check_c result.getvalue()all(sql_query, bufsize=-1, shell=True)
+        # stderr=subprocess.STDOUT
+        string_out = subprocess.check_output(sql_query, bufsize=-1, shell=True, stderr=subprocess.STDOUT)
+        # string_out = subprocess.check_output(sql_query, bufsize=-1, shell=True)
+        app.setTextArea("output", str(string_out, encoding="utf-8") + '\n', end=True, callFunction=True)
+        app.setTextArea("output", "Done executing query" + '\n', end=True, callFunction=True)
+        app.setEntry("ficheiro", "", callFunction=True)
+        app.infoBox("Sucesso", "Execucao terminada", parent=None)
+
+    except subprocess.CalledProcessError as err:
+
+        # app.setTextArea("output", 'Erro : ' + str(err.__str__()) + '\n', end=True, callFunction=True)
+        app.infoBox("Erro", "Nao foi possivel actualizar OpenMRS ", parent=None)
+        app.setTextArea("output", str(err.stdout, encoding="utf-8") + '\n', end=True, callFunction=True)
+        app.setEntry("ficheiro", "selecionar ficheiro", callFunction=True)
+
+    except pymysql.err.ProgrammingError as err:
+        app.infoBox("Erro", "Nao foi possivel actualizar OpenMRS ", parent=None)
+        app.setTextArea("output", "Error executing sqlQuery: " + str(err.args) + '\n', end=True, callFunction=True)
+
+        # return return_code

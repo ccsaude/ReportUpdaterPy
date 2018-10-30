@@ -1,9 +1,7 @@
-
-
 # MySQL credentials
-mysql_username: root
-mysql_password: h4l0h4l0
-host: localhost
+mysql_username: eSaude
+mysql_password: eSaude
+host: 127.0.0.1
 
 # A list of Health facilities
 facilities:
