@@ -1,12 +1,9 @@
-import binascii
-import sys
 
 from appJar import gui
 import subprocess
 import onetimepad
 import miscFunctions
 import pymysql
-import logging
 import traceback
 import os.path
 

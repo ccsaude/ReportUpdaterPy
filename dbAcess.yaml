@@ -2,38 +2,3 @@
 mysql_username: eSaude
 mysql_password: eSaude
 host: 127.0.0.1
-
-# A list of Health facilities
-facilities:
-     - Alto
-     - Junho
-     - Maio
-     - Albazine
-     - Bagamoio
-     - Catembe
-     - Chamanculo
-     - Chiango
-     - Cimento
-     - Hulene
-     - Incassane
-     - Inguane
-     - Inhaca
-     - Inhagoia
-     - Macamo
-     - Mini
-     - Tendas
-     - Malhangalene
-     - Mavalane
-     - Maxaquene
-     - Muchina
-     - Mutsecua
-     - Pescadores
-     - Canico
-     - Porto
-     - Romao
-     - Tribunal
-     - Xipamanine
-     - Zimpeto
-     - Mavalane
-     - Infulene
-     - Malhagalene # wrong filename in backup script
